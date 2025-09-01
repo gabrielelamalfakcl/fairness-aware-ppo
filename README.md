@@ -9,11 +9,20 @@ Implementation of Fair-PPO, with simulation tests (Allelopathic Harvest (AH) and
     * **Demographic Parity (DP)**
     * **Conditional Statistical Parity (CSP)**
     * **Counterfactual Fairness (CF)**
+ 
+* **`fair-PPO-HS`**: Fair-PPO implementation for HS with different fairness metrics:
+    * **Demographic Parity (DP)**
+    * **Conditional Statistical Parity (CSP)**
+    * **Counterfactual Fairness (CF)**
 
 ### BENCHMARK-AH
 * **`FEN-AH`**: FEN implementation in AH (see the paper "Learning Fairness in Multi-Agent Systems", Jiang et al., 2019).
 * **`SOTO-AH`**: SOTO implementation in the AH (see the paper "Learning Fair Policies in Decentralized Cooperative Multi-Agent Reinforcement Learning", Zimmer et al., 2021).
-	
+
+### BENCHMARK-HS
+* **`FEN-HS`**: FEN implementation in HS (see the paper "Learning Fairness in Multi-Agent Systems", Jiang et al., 2019).
+* **`SOTO-HS`**: SOTO implementation in the HS (see the paper "Learning Fair Policies in Decentralized Cooperative Multi-Agent Reinforcement Learning", Zimmer et al., 2021).
+  
 ## How to Train the Algorithms
 Examples with GPU. See parsing args to add more.
 
