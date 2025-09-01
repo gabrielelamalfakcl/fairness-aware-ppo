@@ -1,4 +1,4 @@
-# Project Title: Fairness Aware Reinforcement Learning via Proximal Policy Optimization
+# Fairness Aware Reinforcement Learning via Proximal Policy Optimization
 
 ## Description
 Implementation of Fair-PPO, with simulation tests (Allelopathic Harvest (AH) and HospitalSim (HS)) and benchmarks (PPO, FEN, SOTO).
