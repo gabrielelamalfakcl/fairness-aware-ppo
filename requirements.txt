@@ -1,0 +1,10 @@
+torch
+numpy
+tqdm
+wandb
+pettingzoo
+gymnasium
+matplotlib
+imageio
+pandas
+seaborn

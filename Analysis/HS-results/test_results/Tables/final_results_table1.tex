@@ -1,0 +1,46 @@
+\begin{table*}
+\centering
+\sisetup{table-format = 4.2}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{ l S[table-format=3.2] S[table-format=2.2] S[table-format=1.2] S[table-format=1.2] S[table-format=4.2] S[table-format=2.2] S[table-format=2.2] S[table-format=2.2] }
+\toprule
+\textbf{Algorithm} & {\makecell{\textbf{Patients} \\ \textbf{Treated} \\ \textbf{(Daily Average)}}} & {\makecell{\textbf{Dem} \\ \textbf{Disparity} \\ \textbf{(Rewards)}}} & {\makecell{\textbf{Patient} \\ \textbf{Wait Escort} \\ \textbf{(Minutes)}}} & {\makecell{\textbf{Escort} \\ \textbf{Travel Time} \\ \textbf{(Minutes)}}} & {\makecell{\textbf{Swing Doctor} \\ \textbf{Moves} \\ \textbf{(Average)}}} & {\makecell{\textbf{Perfect Routing} \\ (\textbf{\% of Patients)}}} & {\makecell{\textbf{Backup Routing} \\ \textbf{(\% of Patients)}}} & {\makecell{\textbf{Incorrect Routing} \\ \textbf{(\% of Patients)}}} \\
+\midrule
+Fair-PPO $\alpha=0.0, \beta=0.25$ & 106.57 & 7.10 & 3.95 & 3.56 & 1923.70 & 6.04 & 38.03 & 55.93 \\
+Fair-PPO $\alpha=0.0, \beta=0.5$ & 104.47 & 7.01 & 3.95 & 3.56 & 1923.45 & 5.91 & 39.05 & 55.03 \\
+Fair-PPO $\alpha=0.0, \beta=0.75$ & 206.59 & 13.39 & 4.05 & 3.64 & 1925.62 & 13.89 & 33.89 & 52.22 \\
+Fair-PPO $\alpha=0.0, \beta=1.0$ & 104.63 & 6.96 & 3.95 & 3.56 & 1923.20 & 5.93 & 39.11 & 54.96 \\
+Fair-PPO $\alpha=0.25, \beta=0.0$ & 106.81 & 6.52 & 3.97 & 3.59 & 1924.73 & 6.09 & 40.89 & 53.02 \\
+Fair-PPO $\alpha=0.25, \beta=0.25$ & 105.74 & 6.98 & 4.01 & 3.67 & 1923.93 & 6.05 & 44.93 & 49.03 \\
+Fair-PPO $\alpha=0.25, \beta=0.5$ & 105.84 & 6.62 & 3.94 & 3.55 & 1925.52 & 6.01 & 37.13 & 56.86 \\
+Fair-PPO $\alpha=0.25, \beta=0.75$ & 85.67 & 8.48 & 4.06 & 3.75 & 1924.22 & 4.85 & 43.62 & 51.53 \\
+Fair-PPO $\alpha=0.25, \beta=1.0$ & 118.03 & 9.21 & 3.95 & 3.56 & 1924.34 & 6.77 & 37.49 & 55.74 \\
+Fair-PPO $\alpha=0.5, \beta=0.0$ & 108.02 & 7.03 & 3.97 & 3.59 & 1924.03 & 6.15 & 40.45 & 53.40 \\
+Fair-PPO $\alpha=0.5, \beta=0.25$ & 68.69 & 5.31 & 4.07 & 3.77 & 1924.72 & 3.83 & 43.78 & 52.39 \\
+Fair-PPO $\alpha=0.5, \beta=0.5$ & 105.17 & 7.10 & 3.95 & 3.56 & 1925.35 & 5.95 & 39.04 & 55.01 \\
+Fair-PPO $\alpha=0.5, \beta=0.75$ & 108.05 & 7.29 & 3.95 & 3.57 & 1923.85 & 6.15 & 38.57 & 55.28 \\
+Fair-PPO $\alpha=0.5, \beta=1.0$ & 126.09 & 9.96 & 3.99 & 3.61 & 1922.99 & 7.30 & 39.19 & 53.51 \\
+Fair-PPO $\alpha=0.75, \beta=0.0$ & 105.59 & 6.88 & 3.94 & 3.55 & 1924.57 & 5.99 & 37.73 & 56.28 \\
+Fair-PPO $\alpha=0.75, \beta=0.25$ & 109.51 & 7.24 & 3.97 & 3.60 & 1921.14 & 6.27 & 40.69 & 53.04 \\
+Fair-PPO $\alpha=0.75, \beta=0.5$ & 108.14 & 7.64 & 3.95 & 3.56 & 1924.64 & 6.14 & 38.37 & 55.49 \\
+Fair-PPO $\alpha=0.75, \beta=0.75$ & 73.94 & 6.77 & 4.07 & 3.77 & 1925.02 & 4.15 & 42.23 & 53.63 \\
+Fair-PPO $\alpha=0.75, \beta=1.0$ & 113.40 & 7.87 & 3.96 & 3.59 & 1924.35 & 6.48 & 39.72 & 53.80 \\
+Fair-PPO $\alpha=1.0, \beta=0.0$ & 106.34 & 7.40 & 3.95 & 3.56 & 1924.81 & 6.03 & 38.84 & 55.13 \\
+Fair-PPO $\alpha=1.0, \beta=0.25$ & 104.19 & 6.89 & 3.94 & 3.56 & 1925.00 & 5.91 & 39.03 & 55.07 \\
+Fair-PPO $\alpha=1.0, \beta=0.5$ & 111.74 & 8.45 & 3.95 & 3.57 & 1923.65 & 6.36 & 38.54 & 55.10 \\
+Fair-PPO $\alpha=1.0, \beta=0.75$ & 97.13 & 8.25 & 4.05 & 3.73 & 1923.37 & 5.53 & 45.66 & 48.82 \\
+Fair-PPO $\alpha=1.0, \beta=1.0$ & 105.70 & 6.80 & 3.95 & 3.57 & 1924.67 & 6.00 & 39.26 & 54.75 \\
+\midrule
+PPO & 105.92 & 6.83 & 3.94 & 3.56 & 1923.99 & 6.01 & 38.17 & 55.82 \\
+\midrule
+FEN & 223.76 & 11.74 & 4.54 & 4.09 & 1924.68 & 19.74 & 18.40 & 61.86 \\
+\midrule
+SOTO $\alpha\text{-fair}=0.9$ & 237.35 & 9.37 & 4.56 & 4.11 & 1312.85 & 26.27 & 17.14 & 56.60 \\
+SOTO $\alpha\text{-fair}=1.0$ & 239.60 & 9.21 & 4.51 & 4.06 & 1170.86 & 27.26 & 20.91 & 51.82 \\
+SOTO $\alpha\text{-fair}=2.0$ & 239.95 & 9.13 & 4.51 & 4.06 & 1139.43 & 27.67 & 18.47 & 53.86 \\
+SOTO $\alpha\text{-fair}=5.0$ & 235.22 & 9.45 & 4.55 & 4.10 & 1172.84 & 25.36 & 17.79 & 56.86 \\
+\bottomrule
+\end{tabular}}%
+\caption{HospitalSim. Average efficiency (patients treated) and fairness performance (demographic disparity) across Fair-PPO and benchmark models. Further metrics are reported to complete the analysis.}
+\label{HS-test-results-full}
+\end{table*}
