@@ -39,9 +39,10 @@ Examples with GPU. See parsing args to add more.
 	python3 trainFEN.py --num_episodes 2000 --T_steps 50 --save_every 250 --wandb_run_name "fen_run_1" --cuda "cuda:0"
 # SOTO-HS/train.py:
 	python3 trainSOTO.py --alpha 0.5 --num_episodes 1000 --save_every 200 --wandb_run_name "soto_run_1" --cuda "cuda:0"
+```
 	
 See requirements.txt file to see the necessary packages to install (pip install -r requirements.txt).
 
 ## Results
-In folder "Analysis", we report the scripts to obtain the results in the paper. Please check the input/output folders and the result files format.
+In the folder "Analysis", we report the scripts to obtain the results in the paper. Please check the input/output folders and the result files format.
 Figures and tables are in the respective folders "Figures-Tables" or "Tables". The training results are produced through wandb.
