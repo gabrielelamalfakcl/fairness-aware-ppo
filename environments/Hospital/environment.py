@@ -970,7 +970,7 @@ class Environment:
         self.log_patient_event(patient, f"Reached the Exit and has now left the hospital.")
 
     def handle_helper_arrived(self, helper):
-        #print(f"DEBUG: handle_helper_arrived called at time {self.current_time} for helper {helper.id}") # <-- ADD THIS
+        #print(f"DEBUG: handle_helper_arrived called at time {self.current_time} for helper {helper.id}")
         patient = helper.assigned_patient
         # Explicitly update helper's physical position to their target destination for this event.
         helper.position = helper.target_room
